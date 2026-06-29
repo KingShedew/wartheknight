@@ -1,0 +1,1352 @@
+<!DOCTYPE html><html lang="en"><head>
+	<meta charset="utf-8">
+	<meta name="robots" content="index, follow">
+	<title>War The Knights</title>
+	<meta name="description" content="War The Knights is a medieval battlefield combat game, where two knight factions confront each other directly across an open war zone.">
+	<meta name="keywords" content="War The Knights">
+	<meta name="title" content="War The Knights">
+	<meta property="og:title" content="War The Knights">
+	<meta property="og:site_name" content="War The Knights">
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="https://wartheknights.com">
+	<meta property="og:description" content="War The Knights is a medieval battlefield combat game, where two knight factions confront each other directly across an open war zone.">
+	<meta property="og:image" content="images/war-the-knights.jpg">
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:title" content="War The Knights">
+	<meta name="twitter:description" content="War The Knights is a medieval battlefield combat game, where two knight factions confront each other directly across an open war zone.">
+	<meta name="twitter:image" content="https://wartheknights.com/storage/game/war-the-knights/war-the-knights.jpg">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimal-ui, shrink-to-fit=no viewport-fit=cover">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+	<meta name="apple-mobile-web-app-title" content="War The Knights">
+	<meta name="HandheldFriendly" content="true">
+	<meta name="mobile-web-app-capable" content="yes">
+	<meta name="theme-color" content="#1a1a2e">
+	<link rel="icon" type="image/png" href="images/favicon-96x96.png" sizes="96x96">
+	<link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+	<link rel="shortcut icon" href="images/favicon.ico">
+	<link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+	<link rel="manifest" href="/site.webmanifest">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<link rel="canonical" href="https://wartheknights.com">
+
+
+	<!-- Google tag (gtag.js) -->
+	<script src="https://www.googletagmanager.com/gtag/js?id=G-78Q2BSXRQQ" defer=""></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+
+		function gtag() {
+			dataLayer.push(arguments);
+		}
+		window.addEventListener('load', function() {
+			gtag('js', new Date());
+			gtag('config', 'G-78Q2BSXRQQ');
+		});
+	</script>
+
+	<link rel="preload" href="css/reboot.css" as="style" onload="this.rel='stylesheet'">
+	<noscript>
+		<link rel="stylesheet" href="/static/css/reboot.css">
+	</noscript>
+	<link rel="preload" href="css/home.css" as="style" onload="this.rel='stylesheet'">
+	<noscript>
+		<link rel="stylesheet" href="/static/css/home.css?v=3">
+	</noscript>
+	<link rel="preload" href="css/game.css" as="style" onload="this.rel='stylesheet'">
+	<noscript>
+		<link rel="stylesheet" href="/static/css/game.css?v=1">
+	</noscript>
+	<script>
+		const DOMAIN = 'wartheknights.com'
+	</script>
+
+	<style>
+		*,
+		*:before,
+		*:after {
+			box-sizing: inherit;
+		}
+
+		body {
+			overflow: hidden;
+			position: fixed;
+			top: 0;
+			bottom: 0;
+			width: 100vw;
+			height: 100vh;
+			margin: 0;
+			font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+			font-display: swap;
+			min-height: 3em;
+			font-size: 1rem;
+			font-weight: 400;
+			line-height: 1.5;
+			background-color: #000;
+
+		}
+
+		.main-panel {
+			position: absolute;
+			top: 0 !important;
+			right: 0;
+			max-width: 310px;
+			z-index: 2147483631;
+			margin: 0;
+			-webkit-transition: all .2s ease-in-out;
+			-moz-transition: all .2s ease-in-out;
+			-o-transition: all .2s ease-in-out;
+			transition: all .2s ease-in-out;
+			border-left: 1px solid #adb5bd;
+			background: #eee;
+			color: #000;
+			text-align: justify;
+			overflow-y: auto;
+			overflow-x: hidden;
+			height: 100vh;
+		}
+
+		.main-panel::-webkit-scrollbar {
+			width: 8px;
+			height: 5px;
+		}
+
+		.main-panel::-webkit-scrollbar-thumb {
+			background: #6c757d;
+			border-radius: 10px;
+		}
+
+		.main-panel::-webkit-scrollbar-track {
+			background: 0 0;
+		}
+
+		.main-panel h1,
+		.main-panel h2,
+		.main-panel h3,
+		.main-panel p,
+		.main-panelol,
+		.main-panel ul,
+		.main-panel dl {
+			margin-bottom: 0;
+			margin-top: 5px;
+			font-size: 15px;
+			padding: 0 5px;
+			display: block;
+			width: 300px;
+			overflow: hidden;
+			float: left;
+			font-display: swap;
+		}
+
+		.btn-button {
+			position: absolute;
+			top: 0;
+			right: 0;
+			z-index: 2147483632;
+			width: 310px;
+			-webkit-transition: all .2s ease-in-out;
+			-moz-transition: all .2s ease-in-out;
+			-o-transition: all .2s ease-in-out;
+			transition: all .2s ease-in-out;
+		}
+
+		button.hide-main-panel {
+			position: absolute;
+			background: #eee;
+			width: 30px;
+			height: 42px;
+			left: -29px;
+			top: 35px;
+			padding: 2px 0 2px 1px;
+			border: 1px solid #adb5bd;
+			border-right: none;
+			border-top-right-radius: 0;
+			border-bottom-right-radius: 0;
+			color: #6c757d;
+			z-index: 2147483631;
+		}
+
+		.menu-box a {
+			text-decoration: none;
+			margin: 3px;
+			color: #333;
+			border-radius: 5px;
+			font-weight: 700;
+			display: block;
+			text-transform: capitalize;
+			font-size: 18px;
+			padding: 0 5px;
+			width: fit-content;
+			float: left;
+			height: 33px;
+			line-height: 33px;
+			cursor: pointer;
+		}
+
+		.cr-img {
+			width: 90px;
+			height: 90px;
+		}
+
+		.cr-detail img {
+			height: 90px;
+		}
+
+		.cr-info {
+			opacity: 0;
+		}
+
+		#default-demo img {
+			width: 24px !important;
+			margin: 2px !important;
+			padding-top: 6px !important;
+		}
+
+		.rating {
+			height: 30px;
+			width: 160px !important;
+		}
+
+		#unity-loading-bar {
+			position: absolute;
+			left: 0;
+			top: 0;
+			width: 100vw;
+			height: 100vh;
+			background-color: black;
+			margin: 0;
+			padding: 0;
+			border: none;
+		}
+
+		.rating-element {
+			width: 100% !important;
+		}
+
+		.unity-box {
+			width: 100%;
+			height: 28px;
+			overflow: hidden;
+		}
+
+		.ads_loadding_content {
+			width: 100vw;
+			text-align: center;
+			min-width: 300px;
+			min-height: 250px;
+			overflow: hidden;
+			margin-top: 10px;
+		}
+
+		.item-game {
+			width: 33.33333%;
+			float: left;
+			display: block;
+		}
+
+		.tilte-game {
+			width: 100%;
+			font-size: 28px;
+			font-weight: bold;
+			text-transform: uppercase;
+			text-align: center;
+		}
+
+		.btn_play_a {
+			width: 150px;
+			height: 60px;
+			border-radius: 50px;
+			background-image: linear-gradient(135deg, #feb692 0%, #ea5455 100%);
+			box-shadow: 0 20px 30px -6px rgba(238, 103, 97, 0.5);
+			outline: none;
+			border: none;
+			font-size: 24px;
+			color: white;
+			margin-top: 15px;
+		}
+
+		@media (max-width: 991px) {
+			#unity-loading-bar .ads_loadding {
+				display: block;
+			}
+
+			#unity-loading-bar .ads_loadding_content,
+			#unity-loading-bar .ads_loadding_text,
+			#loader .ads_loadding_content,
+			#loader .ads_loadding_text {
+				display: none;
+			}
+
+			.tilte-game {
+				margin-top: 0;
+			}
+
+		}
+
+		#div_btn_play {
+			display: block;
+			width: 100vw;
+			height: 75px;
+			text-align: center;
+			position: absolute;
+		}
+	</style>
+</head>
+
+<body>
+	<script type="application/ld+json">
+		[{
+				"@context": "https://schema.org",
+				"@type": "VideoGame",
+				"name": "War The Knights",
+				"url": "https://wartheknights.com",
+				"operatingSystem": "Windows, Chrome OS, Linux, MacOS",
+				"description": "War The Knights is a medieval battlefield combat game, where two knight factions confront each other directly across an open war zone.",
+				"applicationCategory": "game",
+				"genre": [
+					"Idle game",
+					"Clicker game"
+				],
+				"gamePlatform": [
+					"Web Browser",
+					"Mobile",
+					"Desktop",
+					"PC"
+				],
+				"aggregateRating": {
+					"@type": "AggregateRating",
+					"ratingValue": 4.6,
+					"bestRating": 5,
+					"worstRating": 1,
+					"ratingCount": 275				},
+				"publisher": {
+					"@type": "Organization",
+					"name": "War The Knights",
+					"url": "https://wartheknights.com"
+				},
+				"offers": {
+					"@type": "Offer",
+					"price": "0",
+					"priceCurrency": "USD",
+					"availability": "https://schema.org/InStock"
+				},
+				"keywords": "War The Knights",
+				"image": "https://wartheknights.com/storage/game/war-the-knights/war-the-knights.jpg"
+			},
+			{
+				"@context": "https://schema.org",
+				"@type": "BreadcrumbList",
+				"itemListElement": [{
+					"@type": "ListItem",
+					"position": 1,
+					"item": {
+						"@type": "Thing",
+						"@id": "https://wartheknights.com",
+						"name": "War The Knights"
+					}
+				}]
+			}
+		]
+	</script>
+
+			<script type="application/ld+json">
+			{
+				"@context": "https://schema.org",
+				"@type": "FAQPage",
+				"mainEntity": [
+					 {
+							"@type": "Question",
+							"name": "",
+							"acceptedAnswer": {
+								"@type": "Answer",
+								"text": ""
+							}
+						}
+									]
+			}
+		</script>
+		<div class="btn-button"><button type="button" class="btn btn-default hide-main-panel" title="Show/hide"><i class="">>></i></button></div>
+	<div class="main-panel">
+		<div class="menu-box" style="height: 33px;">
+			<a href="/">Home</a>
+			<a href="/hot-games">Hot games</a>
+			<a href="/new-games">New games</a>
+		</div>
+		<div style="width:300px;float: left;display: block; position: relative; margin: 3px;">
+			<form method="get" action="/search" id="search">
+				<input style="width: 100%; height: 33px;" id="dark-input-search" name="kw" type="text" placeholder="Search here..." class="inputsearch">
+				<button style="position: absolute; top: -1px; right: 0; border: none;background: none;font-size: 25px;" type="submit" aria-label="Search">⌕</button>
+			</form>
+		</div>
+		<h1 style="width:300px;float: left;display: block;">War The Knights</h1>
+		<link rel="preload" href="css/star-rating-svg.css" as="style" onload="this.rel='stylesheet'">
+		<noscript>
+			<link rel="stylesheet" href="/static/star-rating-svg.css">
+		</noscript>
+		<div class="css-1rcr72c" style="width:300px; height:35px;float: left;display: block;position: relative;">
+			<div class="my-rating" style="width:125px;height:35px;position: absolute;"></div>
+			<div style="width: 150px;height: 35px;min-height: 35px;position: absolute;position: absolute;right: 0px;top: 2px;" class="MuiBox-root css-hrlctq">
+				<div data-id="10350" class="css-iuagh">275</div>
+				<div class="css-qkofrw">ratings</div>
+				<div class="css-1pnh80q">4.6</div>
+			</div>
+		</div>
+		<script src="js/jquery-2.1.4.min.js"></script>
+		<script src="js/jquery.star-rating-svg-home.js"></script>
+		<span style="width: 300px !important;display: block;float: left;font-weight: bold;padding: 0 5px;">Recommend For You</span>
+
+					<div class="item-game">
+				<div class="cr-item">
+					<a href="/wreck-the-robot">
+						<div class="cr-detail">
+							<div style="width: 90px;height: 90px;" class="cr-item-content">
+								<div class="cr-img">
+								</div>
+								<div class="cr-info">Wreck The Robot</div>
+							</div>
+						</div>
+					</a>
+				</div>
+			</div>
+					<div class="item-game">
+				<div class="cr-item">
+					<a href="/veck-io">
+						<div class="cr-detail">
+							<div style="width: 90px;height: 90px;" class="cr-item-content">
+								<div class="cr-img">
+								</div>
+								<div class="cr-info">Veck io</div>
+							</div>
+						</div>
+					</a>
+				</div>
+			</div>
+					<div class="item-game">
+				<div class="cr-item">
+					<a href="/supercar-legends">
+						<div class="cr-detail">
+							<div style="width: 90px;height: 90px;" class="cr-item-content">
+								<div class="cr-img">
+								</div>
+								<div class="cr-info">Supercar Legends</div>
+							</div>
+						</div>
+					</a>
+				</div>
+			</div>
+					<div class="item-game">
+				<div class="cr-item">
+					<a href="/sword-road">
+						<div class="cr-detail">
+							<div style="width: 90px;height: 90px;" class="cr-item-content">
+								<div class="cr-img">
+								</div>
+								<div class="cr-info">Sword Road</div>
+							</div>
+						</div>
+					</a>
+				</div>
+			</div>
+					<div class="item-game">
+				<div class="cr-item">
+					<a href="/tank-stars">
+						<div class="cr-detail">
+							<div style="width: 90px;height: 90px;" class="cr-item-content">
+								<div class="cr-img">
+								</div>
+								<div class="cr-info">Tank Stars</div>
+							</div>
+						</div>
+					</a>
+				</div>
+			</div>
+					<div class="item-game">
+				<div class="cr-item">
+					<a href="/speed-stars">
+						<div class="cr-detail">
+							<div style="width: 90px;height: 90px;" class="cr-item-content">
+								<div class="cr-img">
+								</div>
+								<div class="cr-info">Speed Stars</div>
+							</div>
+						</div>
+					</a>
+				</div>
+			</div>
+					<div class="item-game">
+				<div class="cr-item">
+					<a href="/trees-hate-you">
+						<div class="cr-detail">
+							<div style="width: 90px;height: 90px;" class="cr-item-content">
+								<div class="cr-img">
+								</div>
+								<div class="cr-info">Trees Hate You</div>
+							</div>
+						</div>
+					</a>
+				</div>
+			</div>
+					<div class="item-game">
+				<div class="cr-item">
+					<a href="/flat-baseball">
+						<div class="cr-detail">
+							<div style="width: 90px;height: 90px;" class="cr-item-content">
+								<div class="cr-img">
+								</div>
+								<div class="cr-info">Flat Baseball</div>
+							</div>
+						</div>
+					</a>
+				</div>
+			</div>
+					<div class="item-game">
+				<div class="cr-item">
+					<a href="/stickman-fury">
+						<div class="cr-detail">
+							<div style="width: 90px;height: 90px;" class="cr-item-content">
+								<div class="cr-img">
+								</div>
+								<div class="cr-info">Stickman Fury</div>
+							</div>
+						</div>
+					</a>
+				</div>
+			</div>
+					<div class="item-game">
+				<div class="cr-item">
+					<a href="/rail-in-the-air">
+						<div class="cr-detail">
+							<div style="width: 90px;height: 90px;" class="cr-item-content">
+								<div class="cr-img">
+								</div>
+								<div class="cr-info">Rail in the Air</div>
+							</div>
+						</div>
+					</a>
+				</div>
+			</div>
+					<div class="item-game">
+				<div class="cr-item">
+					<a href="/count-war">
+						<div class="cr-detail">
+							<div style="width: 90px;height: 90px;" class="cr-item-content">
+								<div class="cr-img">
+								</div>
+								<div class="cr-info">Count War</div>
+							</div>
+						</div>
+					</a>
+				</div>
+			</div>
+					<div class="item-game">
+				<div class="cr-item">
+					<a href="/merge-arena">
+						<div class="cr-detail">
+							<div style="width: 90px;height: 90px;" class="cr-item-content">
+								<div class="cr-img">
+								</div>
+								<div class="cr-info">Merge Arena</div>
+							</div>
+						</div>
+					</a>
+				</div>
+			</div>
+					<div class="item-game">
+				<div class="cr-item">
+					<a href="/war-brokers">
+						<div class="cr-detail">
+							<div style="width: 90px;height: 90px;" class="cr-item-content">
+								<div class="cr-img">
+								</div>
+								<div class="cr-info">War Brokers</div>
+							</div>
+						</div>
+					</a>
+				</div>
+			</div>
+					<div class="item-game">
+				<div class="cr-item">
+					<a href="/running-fred">
+						<div class="cr-detail">
+							<div style="width: 90px;height: 90px;" class="cr-item-content">
+								<div class="cr-img">
+								</div>
+								<div class="cr-info">Running Fred</div>
+							</div>
+						</div>
+					</a>
+				</div>
+			</div>
+					<div class="item-game">
+				<div class="cr-item">
+					<a href="/hills-of-steel">
+						<div class="cr-detail">
+							<div style="width: 90px;height: 90px;" class="cr-item-content">
+								<div class="cr-img">
+								</div>
+								<div class="cr-info">Hills of Steel</div>
+							</div>
+						</div>
+					</a>
+				</div>
+			</div>
+					<div class="item-game">
+				<div class="cr-item">
+					<a href="/pixel-gun-3d">
+						<div class="cr-detail">
+							<div style="width: 90px;height: 90px;" class="cr-item-content">
+								<div class="cr-img">
+								</div>
+								<div class="cr-info">Pixel Gun 3D</div>
+							</div>
+						</div>
+					</a>
+				</div>
+			</div>
+					<div class="item-game">
+				<div class="cr-item">
+					<a href="/funny-shooter-2">
+						<div class="cr-detail">
+							<div style="width: 90px;height: 90px;" class="cr-item-content">
+								<div class="cr-img">
+								</div>
+								<div class="cr-info">Funny Shooter 2</div>
+							</div>
+						</div>
+					</a>
+				</div>
+			</div>
+					<div class="item-game">
+				<div class="cr-item">
+					<a href="/minefun">
+						<div class="cr-detail">
+							<div style="width: 90px;height: 90px;" class="cr-item-content">
+								<div class="cr-img">
+								</div>
+								<div class="cr-info">MineFun</div>
+							</div>
+						</div>
+					</a>
+				</div>
+			</div>
+					<div class="item-game">
+				<div class="cr-item">
+					<a href="/metamon">
+						<div class="cr-detail">
+							<div style="width: 90px;height: 90px;" class="cr-item-content">
+								<div class="cr-img">
+								</div>
+								<div class="cr-info">Metamon</div>
+							</div>
+						</div>
+					</a>
+				</div>
+			</div>
+					<div class="item-game">
+				<div class="cr-item">
+					<a href="/bubble-tower">
+						<div class="cr-detail">
+							<div style="width: 90px;height: 90px;" class="cr-item-content">
+								<div class="cr-img">
+								</div>
+								<div class="cr-info">Bubble Tower</div>
+							</div>
+						</div>
+					</a>
+				</div>
+			</div>
+					<div class="item-game">
+				<div class="cr-item">
+					<a href="/wheel-master">
+						<div class="cr-detail">
+							<div style="width: 90px;height: 90px;" class="cr-item-content">
+								<div class="cr-img">
+								</div>
+								<div class="cr-info">Wheel Master</div>
+							</div>
+						</div>
+					</a>
+				</div>
+			</div>
+					<div class="item-game">
+				<div class="cr-item">
+					<a href="/stickman-archer">
+						<div class="cr-detail">
+							<div style="width: 90px;height: 90px;" class="cr-item-content">
+								<div class="cr-img">
+								</div>
+								<div class="cr-info">Stickman Archer</div>
+							</div>
+						</div>
+					</a>
+				</div>
+			</div>
+					<div class="item-game">
+				<div class="cr-item">
+					<a href="/gas-station">
+						<div class="cr-detail">
+							<div style="width: 90px;height: 90px;" class="cr-item-content">
+								<div class="cr-img">
+								</div>
+								<div class="cr-info">Gas Station</div>
+							</div>
+						</div>
+					</a>
+				</div>
+			</div>
+					<div class="item-game">
+				<div class="cr-item">
+					<a href="/scritchy-scratchy">
+						<div class="cr-detail">
+							<div style="width: 90px;height: 90px;" class="cr-item-content">
+								<div class="cr-img">
+								</div>
+								<div class="cr-info">Scritchy Scratchy</div>
+							</div>
+						</div>
+					</a>
+				</div>
+			</div>
+					<div class="item-game">
+				<div class="cr-item">
+					<a href="/cyber-cars-punk-racing">
+						<div class="cr-detail">
+							<div style="width: 90px;height: 90px;" class="cr-item-content">
+								<div class="cr-img">
+								</div>
+								<div class="cr-info">Cyber Cars Punk Racing</div>
+							</div>
+						</div>
+					</a>
+				</div>
+			</div>
+					<div class="item-game">
+				<div class="cr-item">
+					<a href="/real-city-bikes">
+						<div class="cr-detail">
+							<div style="width: 90px;height: 90px;" class="cr-item-content">
+								<div class="cr-img">
+								</div>
+								<div class="cr-info">Real City Bikes</div>
+							</div>
+						</div>
+					</a>
+				</div>
+			</div>
+					<div class="item-game">
+				<div class="cr-item">
+					<a href="/recoil">
+						<div class="cr-detail">
+							<div style="width: 90px;height: 90px;" class="cr-item-content">
+								<div class="cr-img">
+								</div>
+								<div class="cr-info">Recoil</div>
+							</div>
+						</div>
+					</a>
+				</div>
+			</div>
+					<div class="item-game">
+				<div class="cr-item">
+					<a href="/tiger-tank-2">
+						<div class="cr-detail">
+							<div style="width: 90px;height: 90px;" class="cr-item-content">
+								<div class="cr-img">
+								</div>
+								<div class="cr-info">Tiger Tank 2</div>
+							</div>
+						</div>
+					</a>
+				</div>
+			</div>
+					<div class="item-game">
+				<div class="cr-item">
+					<a href="/draw-the-road">
+						<div class="cr-detail">
+							<div style="width: 90px;height: 90px;" class="cr-item-content">
+								<div class="cr-img">
+								</div>
+								<div class="cr-info">Draw the Road</div>
+							</div>
+						</div>
+					</a>
+				</div>
+			</div>
+					<div class="item-game">
+				<div class="cr-item">
+					<a href="/punchy-guy">
+						<div class="cr-detail">
+							<div style="width: 90px;height: 90px;" class="cr-item-content">
+								<div class="cr-img">
+								</div>
+								<div class="cr-info">Punchy Guy</div>
+							</div>
+						</div>
+					</a>
+				</div>
+			</div>
+					<div class="item-game">
+				<div class="cr-item">
+					<a href="/fortzone-battle-royale">
+						<div class="cr-detail">
+							<div style="width: 90px;height: 90px;" class="cr-item-content">
+								<div class="cr-img">
+								</div>
+								<div class="cr-info">Fortzone Battle Royale</div>
+							</div>
+						</div>
+					</a>
+				</div>
+			</div>
+					<div class="item-game">
+				<div class="cr-item">
+					<a href="/snacky-snake">
+						<div class="cr-detail">
+							<div style="width: 90px;height: 90px;" class="cr-item-content">
+								<div class="cr-img">
+								</div>
+								<div class="cr-info">Snacky Snake</div>
+							</div>
+						</div>
+					</a>
+				</div>
+			</div>
+					<div class="item-game">
+				<div class="cr-item">
+					<a href="/ogus">
+						<div class="cr-detail">
+							<div style="width: 90px;height: 90px;" class="cr-item-content">
+								<div class="cr-img">
+								</div>
+								<div class="cr-info">Ogus</div>
+							</div>
+						</div>
+					</a>
+				</div>
+			</div>
+					<div class="item-game">
+				<div class="cr-item">
+					<a href="/carnado-bike-stunt">
+						<div class="cr-detail">
+							<div style="width: 90px;height: 90px;" class="cr-item-content">
+								<div class="cr-img">
+								</div>
+								<div class="cr-info">Carnado Bike Stunt</div>
+							</div>
+						</div>
+					</a>
+				</div>
+			</div>
+					<div class="item-game">
+				<div class="cr-item">
+					<a href="/crazy-race">
+						<div class="cr-detail">
+							<div style="width: 90px;height: 90px;" class="cr-item-content">
+								<div class="cr-img">
+								</div>
+								<div class="cr-info">Crazy Race</div>
+							</div>
+						</div>
+					</a>
+				</div>
+			</div>
+					<div class="item-game">
+				<div class="cr-item">
+					<a href="/merge-rot">
+						<div class="cr-detail">
+							<div style="width: 90px;height: 90px;" class="cr-item-content">
+								<div class="cr-img">
+								</div>
+								<div class="cr-info">Merge Rot</div>
+							</div>
+						</div>
+					</a>
+				</div>
+			</div>
+					<div class="item-game">
+				<div class="cr-item">
+					<a href="/rumble-rush">
+						<div class="cr-detail">
+							<div style="width: 90px;height: 90px;" class="cr-item-content">
+								<div class="cr-img">
+								</div>
+								<div class="cr-info">Rumble Rush</div>
+							</div>
+						</div>
+					</a>
+				</div>
+			</div>
+					<div class="item-game">
+				<div class="cr-item">
+					<a href="/slope-2">
+						<div class="cr-detail">
+							<div style="width: 90px;height: 90px;" class="cr-item-content">
+								<div class="cr-img">
+								</div>
+								<div class="cr-info">Slope 2</div>
+							</div>
+						</div>
+					</a>
+				</div>
+			</div>
+					<div class="item-game">
+				<div class="cr-item">
+					<a href="/astro-rancher">
+						<div class="cr-detail">
+							<div style="width: 90px;height: 90px;" class="cr-item-content">
+								<div class="cr-img">
+								</div>
+								<div class="cr-info">Astro Rancher</div>
+							</div>
+						</div>
+					</a>
+				</div>
+			</div>
+					<div class="item-game">
+				<div class="cr-item">
+					<a href="/kour">
+						<div class="cr-detail">
+							<div style="width: 90px;height: 90px;" class="cr-item-content">
+								<div class="cr-img">
+								</div>
+								<div class="cr-info">Kour</div>
+							</div>
+						</div>
+					</a>
+				</div>
+			</div>
+					<div class="item-game">
+				<div class="cr-item">
+					<a href="/brawl-stars">
+						<div class="cr-detail">
+							<div style="width: 90px;height: 90px;" class="cr-item-content">
+								<div class="cr-img">
+								</div>
+								<div class="cr-info">Brawl Stars</div>
+							</div>
+						</div>
+					</a>
+				</div>
+			</div>
+					<div class="item-game">
+				<div class="cr-item">
+					<a href="/deadriseio">
+						<div class="cr-detail">
+							<div style="width: 90px;height: 90px;" class="cr-item-content">
+								<div class="cr-img">
+								</div>
+								<div class="cr-info">Deadrise.io</div>
+							</div>
+						</div>
+					</a>
+				</div>
+			</div>
+					<div class="item-game">
+				<div class="cr-item">
+					<a href="/stick-merge">
+						<div class="cr-detail">
+							<div style="width: 90px;height: 90px;" class="cr-item-content">
+								<div class="cr-img">
+								</div>
+								<div class="cr-info">Stick Merge</div>
+							</div>
+						</div>
+					</a>
+				</div>
+			</div>
+					<div class="item-game">
+				<div class="cr-item">
+					<a href="/subway-surfers-new-york">
+						<div class="cr-detail">
+							<div style="width: 90px;height: 90px;" class="cr-item-content">
+								<div class="cr-img">
+								</div>
+								<div class="cr-info">Subway Surfers New York</div>
+							</div>
+						</div>
+					</a>
+				</div>
+			</div>
+					<div class="item-game">
+				<div class="cr-item">
+					<a href="/tap-tap-shots">
+						<div class="cr-detail">
+							<div style="width: 90px;height: 90px;" class="cr-item-content">
+								<div class="cr-img">
+								</div>
+								<div class="cr-info">Tap Tap Shots</div>
+							</div>
+						</div>
+					</a>
+				</div>
+			</div>
+					<div class="item-game">
+				<div class="cr-item">
+					<a href="/push-titans">
+						<div class="cr-detail">
+							<div style="width: 90px;height: 90px;" class="cr-item-content">
+								<div class="cr-img">
+								</div>
+								<div class="cr-info">Push Titans</div>
+							</div>
+						</div>
+					</a>
+				</div>
+			</div>
+					<div class="item-game">
+				<div class="cr-item">
+					<a href="/dead-shot">
+						<div class="cr-detail">
+							<div style="width: 90px;height: 90px;" class="cr-item-content">
+								<div class="cr-img">
+								</div>
+								<div class="cr-info">Dead Shot</div>
+							</div>
+						</div>
+					</a>
+				</div>
+			</div>
+					<div class="item-game">
+				<div class="cr-item">
+					<a href="/dino-fighter">
+						<div class="cr-detail">
+							<div style="width: 90px;height: 90px;" class="cr-item-content">
+								<div class="cr-img">
+								</div>
+								<div class="cr-info">Dino Fighter</div>
+							</div>
+						</div>
+					</a>
+				</div>
+			</div>
+					<div class="item-game">
+				<div class="cr-item">
+					<a href="/geometry-dash-breeze">
+						<div class="cr-detail">
+							<div style="width: 90px;height: 90px;" class="cr-item-content">
+								<div class="cr-img">
+								</div>
+								<div class="cr-info">Geometry Dash Breeze</div>
+							</div>
+						</div>
+					</a>
+				</div>
+			</div>
+					<div class="item-game">
+				<div class="cr-item">
+					<a href="/rocketgoal-io">
+						<div class="cr-detail">
+							<div style="width: 90px;height: 90px;" class="cr-item-content">
+								<div class="cr-img">
+								</div>
+								<div class="cr-info">RocketGoal io</div>
+							</div>
+						</div>
+					</a>
+				</div>
+			</div>
+					<div class="item-game">
+				<div class="cr-item">
+					<a href="/sprunki">
+						<div class="cr-detail">
+							<div style="width: 90px;height: 90px;" class="cr-item-content">
+								<div class="cr-img">
+								</div>
+								<div class="cr-info">Sprunki</div>
+							</div>
+						</div>
+					</a>
+				</div>
+			</div>
+				<script>
+			let imgIteam = ["\/storage\/game\/wreck-the-robot\/wreck-the-robot.jpg","\/storage\/game\/veck-io\/veck-io.jpg","\/storage\/game\/supercar-legends\/supercar-legends.jpg","\/storage\/game\/sword-road\/sword-road.jpg","\/storage\/game\/tank-stars\/tank-stars.jpg","\/storage\/game\/speed-stars\/speed-stars.jpg","\/storage\/game\/trees-hate-you\/trees-hate-you.jpg","\/storage\/game\/flat-baseball\/flat-baseball.jpg","\/storage\/game\/stickman-fury\/stickman-fury.jpg","\/storage\/game\/rail-in-the-air\/rail-in-the-air.jpg","\/storage\/game\/count-war\/count-war.jpg","\/storage\/game\/merge-arena\/merge-arena.jpg","\/storage\/game\/war-brokers\/war-brokers.jpg","\/storage\/game\/running-fred\/running-fred.jpg","\/storage\/game\/hills-of-steel\/hills-of-steel.jpg","\/storage\/game\/pixel-gun-3d\/pixel-gun-3d.jpg","\/storage\/game\/funny-shooter-2\/funny-shooter-2.jpg","\/storage\/game\/minefun\/MineFun.png","\/storage\/game\/metamon\/metamon.jpg","\/storage\/game\/bubble-tower\/bubble-tower.jpg","\/storage\/game\/wheel-master\/wheel-master.jpg","\/storage\/game\/stickman-archer\/stickman-archer.jpg","\/storage\/game\/gas-station\/gas-station.jpg","\/storage\/game\/scritchy-scratchy\/scritchy-scratchy.jpg","\/storage\/game\/cyber-cars-punk-racing\/cyber-cars-punk-racing.png","\/storage\/game\/real-city-bikes\/real-city-bikes.jpg","\/storage\/game\/recoil\/recoil.jpg","\/storage\/game\/tiger-tank-2\/tiger-tank-2.jpg","\/storage\/game\/draw-the-road\/draw-the-road.jpg","\/storage\/game\/punchy-guy\/punchy-guy.jpg","\/storage\/game\/fortzone-battle-royale\/fortzone11.jpg","\/storage\/game\/snacky-snake\/snacky-snake.jpg","\/storage\/game\/ogus\/ogus.jpg","\/storage\/game\/carnado-bike-stunt\/carnado-bike-stunt.jpg","\/storage\/game\/crazy-race\/crazy-race.jpg","\/storage\/game\/merge-rot\/merge-rot.jpg","\/storage\/game\/rumble-rush\/rumblerush.jpg","\/storage\/game\/slope-2\/slope-2.jpg","\/storage\/game\/astro-rancher\/astro-rancher.jpg","\/storage\/game\/kour\/kourio.jpg","\/storage\/game\/braw-stars\/brawstar.jpg","\/storage\/game\/deadriseio\/deadriseio.jpg","\/storage\/game\/stick-merge\/stick-merge.jpg","\/storage\/game\/subway-surfers-new-york\/Subway Surfers New York.jpeg","\/storage\/game\/tap-tap-shots\/tap-tap-shots.jpg","\/storage\/game\/push-titans\/push-titans.jpg","\/storage\/game\/dead-shot\/dead-shot.jpg","\/storage\/game\/dino-fighter\/dino-fighter.jpg","\/storage\/game\/geometry-dash-breeze\/geometry-dash-breeze.jpg","\/storage\/game\/rocketgoal-io\/RocketGoal io.png","\/storage\/game\/sprunki\/sprunki.jpg"];
+			let titleIteam = ["Wreck The Robot","Veck io","Supercar Legends","Sword Road","Tank Stars","Speed Stars","Trees Hate You","Flat Baseball","Stickman Fury","Rail in the Air","Count War","Merge Arena","War Brokers","Running Fred","Hills of Steel","Pixel Gun 3D","Funny Shooter 2","MineFun","Metamon","Bubble Tower","Wheel Master","Stickman Archer","Gas Station","Scritchy Scratchy","Cyber Cars Punk Racing","Real City Bikes","Recoil","Tiger Tank 2","Draw the Road","Punchy Guy","Fortzone Battle Royale","Snacky Snake","Ogus","Carnado Bike Stunt","Crazy Race","Merge Rot","Rumble Rush","Slope 2","Astro Rancher","Kour","Brawl Stars","Deadrise.io","Stick Merge","Subway Surfers New York","Tap Tap Shots","Push Titans","Dead Shot","Dino Fighter","Geometry Dash Breeze","RocketGoal io","Sprunki"];
+			let cr_img = document.querySelectorAll(".cr-img");
+			document.addEventListener("DOMContentLoaded", function() {
+				let oneEven = 0;
+
+				function ActionEvent() {
+					if (oneEven === 0) {
+						oneEven = 1;
+						const timer = setInterval(() => {
+							for (let i = 0; i < cr_img.length; i++) {
+								cr_img[i].innerHTML = '<img loading="lazy" rel="preload" src="' + imgIteam[i] + '" title="' + titleIteam[i] + '"alt="' + titleIteam[i] + '">';
+							}
+							clearInterval(timer);
+						}, 5);
+					}
+				}
+
+				function handleClick(e) {
+					ActionEvent();
+					document.removeEventListener("click", handleClick);
+				}
+				document.addEventListener("click", handleClick);
+
+				function handlemousemove(e) {
+					ActionEvent();
+					document.removeEventListener("mousemove", handlemousemove);
+				}
+				document.addEventListener("mousemove", handlemousemove);
+
+			});
+		</script>
+		<h2><strong>War The Knights Introduction</strong></h2>
+
+<p><strong>War The Knights is</strong> a medieval battlefield combat game, where two knight factions confront each other directly across an open war zone.</p>
+
+<p>The game recreates the atmosphere of feudal warfare through continuous clashes between numerous warriors, allowing players to feel as if they are participating in a real conflict between rival armies.</p>
+
+<p>From the beginning, players choose a faction and enter the battlefield as a frontline warrior. The objective extends beyond defeating opponents, requiring teamwork to control strategic locations, capture flags, and maintain tactical advantages across the map. The respawn system is connected to captured control points, meaning every attack or defensive decision can immediately influence the course of battle.</p>
+
+<p>In War The Knights, real-time combat is combined with battlefield tactics. Players can equip a wide range of medieval weapons such as two-handed swords, long spears, bows, and defensive shields, while also deploying support items that help nearby allies remain effective during combat. Battles constantly evolve as teams advance, defend positions, or launch counterattacks across environments such as castle courtyards, abandoned villages, and narrow mountain passes.</p>
+
+<p>With a direct combat perspective and many warriors fighting simultaneously, the game reflects the chaotic nature of medieval warfare, where personal skill, coordination between teammates, and tactical decisions determine the final outcome.</p>
+
+<h2><strong>What Type of Game Is War The Knights?</strong></h2>
+
+<p>War The Knights belongs to a hybrid game category that combines medieval combat, battlefield simulation, and team based action gameplay. Instead of focusing on individual duels alone, the game places players inside active battle zones where coordination, positioning, and tactical decisions influence the outcome of each match. The presence of faction warfare, controllable equipment, and objective based combat systems makes the gameplay feel closer to a battlefield scenario rather than a traditional fighting game.</p>
+
+<p>Unlike simple sword combat titles, War The Knights emphasizes territory control, teamwork, and battlefield awareness. Players must balance offense and defense while adapting to changing situations across different environments, which gives the game characteristics commonly found in both simulation and adventure oriented war games.</p>
+
+<h3><strong>Is War The Knights a <a href="https://wartheknights.com/c/simulation">simulation game</a>?</strong></h3>
+
+<p>War The Knights can be considered a medieval combat simulation because it recreates many elements associated with historical battlefield encounters. Players engage in close range sword fights, ranged combat using bows or crossbows, and defensive formations supported by shields and tactical equipment. Movement speed, attack timing, and positioning all play an important role during combat, encouraging players to react realistically rather than relying on repetitive attacks.</p>
+
+<p>The battlefield layout also contributes to this simulation aspect. Terrain such as castle courtyards, villages, and mountain paths directly affects combat flow, forcing players to adjust strategies depending on elevation, visibility, and available cover. These mechanics create a combat system that reflects organized medieval warfare rather than isolated arena fighting.</p>
+
+<h3><strong>Why is War The Knights considered an <a href="https://wartheknights.com/c/adventure">adventure game</a>?</strong></h3>
+
+<p>War The Knights is often associated with the adventure genre because players continuously move through different battlefield environments while completing objectives tied to map control. Each location introduces unique spatial challenges, encouraging exploration and adaptation instead of static combat encounters.</p>
+
+<p>The game features multiple environments inspired by medieval settings, including fortified castles, island battle zones, and mountainous passages. Advancing through these areas while securing control points gives players a sense of progression similar to adventure based gameplay, where every match unfolds differently depending on movement routes and team coordination.</p>
+
+<h3><strong>Which team based games are similar to War The Knights?</strong></h3>
+
+<p>War The Knights shares similarities with several team oriented battle games that divide players into opposing factions competing for objectives. The Blue versus Red structure resembles competitive team systems found in games such as Brawl Stars, where success depends on cooperation rather than individual performance alone.</p>
+
+<p>Like other team based action titles, victory is achieved through coordinated attacks, area control, and strategic positioning. However, War The Knights distinguishes itself by placing these mechanics within a medieval warfare setting, replacing modern weapons with swords, shields, and tactical battlefield equipment while maintaining familiar team combat dynamics.</p>
+
+<h2><strong>Team Blue and Team Red Explained</strong></h2>
+
+<p>In War The Knights, every battle revolves around two opposing factions known as <strong>Team Blue</strong> and <strong>Team Red</strong>. Each team represents an organized army competing for territorial control across the battlefield rather than simply eliminating opponents one by one. The confrontation between these two sides forms the core structure of every match.</p>
+
+<p>At the start of a battle, players can choose which team to join and spawn alongside allied warriors. Both factions fight to dominate strategic locations marked across the map, typically identified by capture points positioned in key areas such as castle entrances, open courtyards, or narrow pathways. These locations act as tactical anchors that determine battlefield control.</p>
+
+<h2><strong>Battle Settings: What Can Be Adjusted Before Starting War The Knights?</strong></h2>
+
+<p>Before entering a battle in War The Knights, players are given access to the <strong>Battle Settings</strong> menu, where several important elements of the upcoming match can be customized. This system allows players to control how battles unfold by adjusting team balance, selecting maps, and configuring gameplay conditions before combat begins.</p>
+
+<p>The settings interface provides flexibility for both casual matches and more controlled battlefield scenarios, ensuring that each match can feel different depending on player preferences.</p>
+
+<h3><strong>How Many Maps Are Available in War The Knights?</strong></h3>
+
+<p>War The Knights currently features several playable battlefields, each offering distinct terrain layouts that directly affect combat strategies. Based on the map selection screen, players can choose between environments such as:</p>
+
+<ul>
+	<li><strong>Two Mountains</strong>, featuring elevated terrain and open combat routes</li>
+	<li><strong>Winter</strong>, a snow covered battlefield with tighter structures and visibility challenges</li>
+	<li><strong>Central Tower</strong>, focused around a dominant central structure encouraging concentrated battles</li>
+</ul>
+
+<p>Each map changes how teams approach movement, positioning, and control point defense, making terrain awareness an important factor during matches.</p>
+
+<h3><strong>How Can Warriors Be Configured for Each Team?</strong></h3>
+
+<p>The Battle Settings menu allows players to adjust the total number of warriors participating in a match. The recommended range typically falls between <strong>40 and 60 warriors</strong>, helping maintain balanced combat conditions.</p>
+
+<p>A balance slider enables players to distribute forces evenly between Team Blue and Team Red or intentionally create asymmetric battles. Adjusting warrior counts directly influences battlefield intensity, affecting how crowded engagements become and how quickly control points change ownership.</p>
+
+<p>Additional parameters such as respawn duration and the number of revivals can also be modified, allowing matches to last longer or become more fast paced depending on player preference.</p>
+
+<h3><strong>What Does Conquest Mode Mean in War The Knights?</strong></h3>
+
+<p>Conquest Mode is the main gameplay mode in War The Knights, where teams compete to capture and control strategic points across the battlefield instead of focusing only on eliminations. Holding these locations provides positional advantages and helps teams maintain pressure against their opponents, making teamwork and coordinated attacks essential for victory.</p>
+
+<h2><strong>How to Play War The Knights?</strong></h2>
+
+<p>To play War The Knights, start by selecting a team and preparing your preferred weapons before entering the battle. Once the match begins, move across the battlefield using keyboard controls, attack enemies, and capture control points to support your team. Players must balance attacking and defending while working together to secure strategic locations and gain advantage during the match.</p>
+
+<h3><strong>Where Can You Play War The Knights Online?</strong></h3>
+
+<p>You can play War The Knights directly on <a href="https://wartheknights.com"><strong>wartheknights.com</strong></a> using your desktop web browser without downloading or installing any additional files. The game runs online through the website, allowing players to start a match quickly by opening the game page and clicking the Play button.</p>
+
+<p>Since War The Knights is designed for keyboard and mouse controls, it is best experienced on a computer. Once the page loads, players can immediately access the battlefield, select their preferred team, and begin playing without creating an account or completing complex setup steps.</p>
+
+<h3><strong>Controls on PC</strong></h3>
+
+<p>War The Knights is designed for desktop only and requires keyboard and mouse controls.</p>
+
+<ul>
+	<li>W, A, S, D - Move</li>
+	<li>Left Mouse - Attack</li>
+	<li>Right Mouse - Defend / Aim</li>
+	<li>Shift - Run</li>
+	<li>Z - Crouch</li>
+	<li>E - Interact</li>
+	<li>1, 2 - Main weapons</li>
+	<li>3, 4 - Gadgets</li>
+	<li>F - Kick</li>
+	<li>R - Battle cry</li>
+	<li>P / Esc - Pause</li>
+</ul>
+
+<h2><strong>Conclusion</strong></h2>
+
+<p>War The Knights offers a medieval team based battlefield where players fight for territorial control through coordinated combat and strategic positioning. With selectable teams, customizable battle settings, multiple maps, and a variety of weapons, each match presents a different tactical situation on the battlefield.</p>
+
+<p>Whether defending control points or advancing with allied warriors, success depends on teamwork and smart decision making. For players who enjoy objective driven combat set in a medieval environment, War The Knights provides a straightforward and engaging browser based battle experience.</p>
+		<div class="row-footer-menu" style="width:300px;float: left;display: block;">
+			<div class="flex-wrap">
+				<a href="/about-us" rel="nofollow" class="name-menu-footer"> About Us</a>
+				<a href="/contact-us" rel="nofollow" class="name-menu-footer"> Contact Us</a>
+				<a href="/term-of-use" rel="nofollow" class="name-menu-footer"> Terms of Use</a>
+				<a href="/privacy-policy" rel="nofollow" class="name-menu-footer"> Privacy Policy</a>
+				<a href="/copyright-infringement-notice-procedure" rel="nofollow" class="name-menu-footer"> Copyright Infringement Notice Procedure</a>
+			</div>
+		</div>
+	</div>
+	<!--- game -->
+	<link rel="stylesheet" href="css/style.css">
+	<!-- Unity canvas -->
+	<div id="unity-container">
+		<canvas id="unity-canvas" tabindex="-1"></canvas>
+		<div id="unity-loading-bar">
+			<div id="unity-logo" style="margin: auto;"></div>
+			<div id="unity-progress-bar-empty">
+				<div id="unity-progress-bar-full"></div>
+			</div>
+		</div>
+	</div>
+
+
+	<!-- Unity loader script -->
+	<script src="js/unityApp.js"></script>
+
+	<script>
+		let FlagTimeout = 0;
+		FlagTimeout = 1;
+		let timeTimeout = 39000;
+
+		function ChangeFlagTimeout() {
+			FlagTimeout = 1;
+			setTimeout(function() {
+				FlagTimeout = 0;
+			}, timeTimeout);
+		}
+
+		function none_ads_inGame(acb) {
+			console.log('none_ads_inGame: ' + acb);
+			document.getElementById("AdsInGame").style.display = "none";
+			document.getElementById("btn_close").style.display = "none";
+			document.getElementById("vaule_countdown").style.display = "block";
+		}
+
+		function show_ads_inGame() {
+			if (FlagTimeout == 0) {
+				show_ads_inGame_dp();
+				ChangeFlagTimeout();
+			} else {
+				setTimeout(() => {
+					none_ads_inGame(false);
+				}, 10);
+			}
+		}
+
+		function none_loadding() {
+			let loader = document.querySelector("#loader");
+			if (loader == null) {
+				loader = document.querySelector("#unity-loading-bar")
+			}
+			loader.style.display = "none";
+		}
+
+		function show_ads_inGame_dp() {
+
+			// document.getElementById("AdsInGame").style.display = "block";
+			// let ads_innt = '<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5436783100115706" crossorigin="anonymous"><\/script><ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-5436783100115706" data-ad-slot="2787492580" data-ad-format="auto" data-full-width-responsive="true"></ins>';
+			// document.getElementsByClassName("ads_loadding_content")[1].innerHTML = ads_innt;
+			// (adsbygoogle = window.adsbygoogle || []).push({});
+			// var countDownClose = 6;
+			// var x = setInterval(function() {
+			// 	countDownClose = countDownClose - 1;
+			// 	document.getElementById("vaule_countdown").innerHTML = "Continue in " + countDownClose;
+			// 	if (countDownClose < 0) {
+			// 		clearInterval(x);
+			// 		document.getElementById("vaule_countdown").style.display = "none";
+			// 		document.getElementById("btn_close").style.display = "block";
+			// 		countDownClose = 6;
+			// 		document.getElementById("vaule_countdown").innerHTML = "Continue in " + countDownClose;
+
+			// 	}
+			// }, 1000);
+
+		}
+
+		function show_Ads1() {
+			// let ads1 = '<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5436783100115706" crossorigin="anonymous"><\/script><ins class="adsbygoogle" style="display:inline-block;width:300px;height:250px" data-ad-client="ca-pub-5436783100115706" data-ad-slot="5413655928"></ins>';;
+			// document.getElementById("Ads1").innerHTML = ads1;
+			// (adsbygoogle = window.adsbygoogle || []).push({});
+		}
+
+		function show_Ads_Loading() {
+			// let ads_load = '<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5436783100115706" crossorigin="anonymous"><\/script><ins class="adsbygoogle" style="display:inline-block;width:300px;height:250px" data-ad-client="ca-pub-5436783100115706" data-ad-slot="5413655928"></ins>';
+			// document.getElementsByClassName("ads_loadding_content")[0].innerHTML = ads_load;
+			// (adsbygoogle = window.adsbygoogle || []).push({});
+		}
+		show_Ads1();
+		show_Ads_Loading();
+	</script>
+	<script>
+		(function() {
+			function isEditable(el) {
+				if (!el) return false;
+				if (el.isContentEditable) return true;
+				var tag = (el.tagName || '').toUpperCase();
+				return tag === 'INPUT' || tag === 'TEXTAREA';
+			}
+
+			var origAddEventListener = EventTarget.prototype.addEventListener;
+			EventTarget.prototype.addEventListener = function(type, listener, options) {
+				if (['keydown', 'keypress', 'keyup'].includes(type) &&
+					(this === document || this === window)) {
+					var wrapped = function(ev) {
+						if (isEditable(ev.target)) {
+							return;
+						}
+						return listener.call(this, ev);
+					};
+					return origAddEventListener.call(this, type, wrapped, options);
+				}
+				return origAddEventListener.call(this, type, listener, options);
+			};
+		})();
+	</script>
+	<script>
+		document.addEventListener("DOMContentLoaded", () => {
+			function ToggleInfo() {
+				let width_panel = $("div.main-panel").css('width');
+				width_panel = width_panel.replaceAll('px', '');
+				if ((width_panel >= 300)) {
+					$("div.main-panel").css('width', '0px');
+					$("div.btn-button").css('width', '0px');
+					$("div.main-panel-ads").css('display', 'none');
+					$("div.HiShPa").css('display', 'none');
+					$('button.hide-main-panel').children('i').html('Info');
+				} else {
+					$("div.main-panel").css('width', $("div.main-panel").css('max-width'));
+					$("div.btn-button").css('width', $("div.main-panel").css('max-width'));
+					$("div.main-panel-ads").css('display', 'block');
+					$("div.HiShPa").css('display', 'block');
+					$('button.hide-main-panel').children('i').html('>>');
+				}
+			}
+			$('button.hide-main-panel').click(function() {
+				ToggleInfo();
+			});
+		});
+	</script>
+
+
+
+</body></html>
