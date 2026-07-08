@@ -1,2 +1,3 @@
-# I have came to the conclusion that this wartheknight repo just DOESN'T WORK!
-> (I will try to rip from another game site soon.)
+# A Working Port Of War The Knights
+> (Took me forever to do this.)
+Now enjoy, download index.html, and play some War The Knights.
